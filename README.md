@@ -5,7 +5,7 @@ The LSTM neural network is a type of recurrent neural network that is well-suite
 
 <div align="center">
 
-![stock_icon](https://github.com/amideo-7/StockPricePrediction/blob/main/Images/stock.png)
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/main/Images/stock.png" width="10%" height="10%"/>
 
 </div>
 
