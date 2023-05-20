@@ -1,13 +1,14 @@
 # Stock Price Prediction
+<div align="center">
+
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/main/Images/stock.png" width="30%" height="30%"/>
+
+</div>
+
 This project uses machine learning to predict the future price of a stock. The project uses a Long Short-Term Memory (LSTM) neural network to predict the stock price. 
 
 The LSTM neural network is a type of recurrent neural network that is well-suited for time series data, such as stock prices. LSTM models were designed to address the vanishing gradient problem. LSTM models have a special structure that allows them to learn long-term dependencies in data.
 
-<div align="center">
-
-<img src="https://github.com/amideo-7/StockPricePrediction/blob/main/Images/stock.png" width="40%" height="40%"/>
-
-</div>
 
 The project uses the following steps to predict the stock price:
 
