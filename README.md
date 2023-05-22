@@ -9,6 +9,8 @@ This project uses machine learning to predict the future price of a stock. The p
 
 The LSTM neural network is a type of recurrent neural network that is well-suited for time series data, such as stock prices. LSTM models were designed to address the vanishing gradient problem. LSTM models have a special structure that allows them to learn long-term dependencies in data.
 
+LSTM networks are an extension of recurrent neural networks (RNNs) mainly introduced to handle situations where RNNs fail. Talking about RNN, it is a network that works on the present input by taking into consideration the previous output (feedback) and storing in its memory for a short period of time (short-term memory).
+
 
 The project uses the following steps to predict the stock price:
 
