@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 98vw;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.logoHeading{
+    display: flex;
+    color: #D60725;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
+.navList{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navList li{
+    margin: 0 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.Intro{
+    position: relative;
+    background-image: url('images/introBackground.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+.tagline{
+    display: flex;
+    margin-top: 20vh;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #252525;
+}
+  
+.tag{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tag1{
+    margin-right: 150px;
+}
+
+.tag2{
+    margin-left: 150px;
+    color: #D60725;
+    line-height: 60px;
+}
+
+.tag2-4{
+    opacity: 0.3;
+    font-size: 30px;
+}
+
+.tag2-3{
+    opacity: 0.5;
+    font-size: 40px;
+}
+
+.tag2-2{
+    opacity: 0.7;
+    font-size: 50px;
+}
+
+.tag2-1{
+    font-size: 60px;
+}
+
+.form{
+    position: relative;
+    background-image: url('images/formBackground.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+
+form {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Apply styles to each image option */
+.image-option {
+    flex-basis: calc(33.33% - 10px); /* Adjust this value as needed */
+    margin-bottom: 10px;
+}
+
+.image-option:hover img {
+    filter: grayscale(0%);
+}
+
+/* Apply color filter when selected */
+.image-option.selected img {
+    filter: grayscale(0%);
+}
+
+/* Hide default radio button */
+.image-option input[type="radio"] {
+    display: none;
+}
+
+/* Apply grayscale filter to images */
+.image-option img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    width: 100%;
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+/* Apply color filter when selected */
+.image-option input[type="radio"]:checked + img {
+    filter: grayscale(0%);
+}
+
+/* Center the submit button */
+.submit-button {
+    margin-top: 45px;
+    font-family: 'Montserrat';
+}
+
+/* Style the submit button */
+.submit-button input[type="submit"] {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: 'Montserrat';
+}
+
+/* Change color on hover */
+.submit-button input[type="submit"]:hover {
+    background-color: #D60725;
+    border: #D60725;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.resultDiv{
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #D60725;
+}
+
+.result{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}

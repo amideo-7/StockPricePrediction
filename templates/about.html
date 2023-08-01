@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='aboutStylesheet.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <div class="container">
+
+        <section class="Intro">
+            <nav>
+                <div class="logo">
+                    <h1 class="logoHeading"><a href="{{ url_for('index') }}">Stoczz.</a></li></h1>
+                </div>
+                <ul class="navList">
+                    <li><a href="https://github.com/amideo-7/StockPricePrediction.git">Code</a></li>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="content">
+
+                <div class="Introduction">
+                    <h2 class="introHeading">
+                        Introduction
+                    </h2>
+                    <p class="para">
+                        Stock price prediction is a critical task in the financial domain, with implications for investors, 
+                        traders, and businesses. This project aims to leverage the power of 
+                        artificial neural networks to analyze historical time series data and predict the closing stock prices 
+                        of a given financial instrument.
+                    </p>
+                </div>
+
+                <div class="Introduction">
+                    <h2 class="introHeading">
+                        Long Short-Term Memory (LSTM) Model
+                    </h2>
+                    <p class="para">
+                        The LSTM neural network, a type of recurrent neural network (RNN), will be the core of the stock price 
+                        prediction model. LSTMs are well-suited for time series data as they can capture long-term dependencies 
+                        and patterns in sequences, making them effective in forecasting stock prices.  It is a variant of the 
+                        recurrent neural network (RNN) designed to overcome some of the limitations of traditional RNNs, especially 
+                        when dealing with long-term dependencies in sequences.
+                    </p>
+                </div>
+
+                <div class="Introduction">
+                    <h2 class="introHeading">
+                        Contact Me
+                    </h2>
+                    <p class="para">
+                        <table class="contact">
+                            <tr class="logos">
+                                <td><a href="https://github.com/amideo-7"><img src="{{ url_for('static', filename='images/github.jpg') }}" alt="github"></a></td>
+                                <td><a href="https://www.linkedin.com/in/aayush-sharma-646449204/"><img src="{{ url_for('static', filename='images/linkedin.jpg') }}" alt="linkedin"></td>
+                                <td><a href="https://twitter.com/aayushs47212218"><img src="{{ url_for('static', filename='images/x.jpg') }}" alt="x"></td>
+                                <td><a href="https://github.com/amideo-7/Resume/blob/7b3f616ddce51cf7d670ecc0a5851f7a854ae858/AayushSharma'sResume.pdf"><img src="{{ url_for('static', filename='images/resume.jpg') }}" alt="resume"></a></td>
+                            </tr>
+                        </table>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </section>
+        
+    </div>
+
+</body>
+</html>

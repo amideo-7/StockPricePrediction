@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexStylesheet.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+
+
+    <div class="container">
+
+        <section class="Intro">
+            <nav>
+                <div class="logo">
+                    <h1 class="logoHeading">Stoczz.</h1>
+                </div>
+                <ul class="navList">
+                    <li><a href="https://github.com/amideo-7/StockPricePrediction.git">Code</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="tagline">
+                <div class="tag">
+                    <h1 class="tag1">Don't <br>Just <br>Save</h1>
+                </div>
+                <div class="tag">
+                    <div class="tag2">
+                        <h1 class="tag2-4">Invest!</h1>
+                        <h1 class="tag2-3">Invest!</h1>
+                        <h1 class="tag2-2">Invest!</h1>
+                        <h1 class="tag2-1">Invest!</h1>
+                        <h1 class="tag2-2">Invest!</h1>
+                        <h1 class="tag2-3">Invest!</h1>
+                        <h1 class="tag2-4">Invest!</h1> 
+                    </div>           
+                </div>
+            </div>
+              
+
+        </section>
+        
+        <section class="form">
+            <form id="form" action="{{ url_for('predict') }}" method="POST">
+                <div class="image-option">
+                    <label for="google">
+                        <input type="radio" id="google" name="company" value="google">
+                        <img src="{{ url_for('static', filename='images/google.png') }}" alt="google">
+                    </label>
+                </div>
+        
+                <div class="image-option">
+                    <label for="apple">
+                        <input type="radio" id="apple" name="company" value="apple">
+                        <img src="{{ url_for('static', filename='images/apple.png') }}" alt="apple">
+                    </label>
+                </div>
+        
+                <div class="image-option">
+                    <label for="tesla">
+                        <input type="radio" id="tesla" name="company" value="tesla">
+                        <img src="{{ url_for('static', filename='images/tesla.png') }}" alt="tesla">
+                    </label>
+                </div>
+        
+                <div class="submit-button">
+                    <input type="submit" value="Submit">
+                </div>
+
+                
+            </form>
+            <div class="resultDiv">
+                <h2 class="result">
+                    {{ pred }}
+                </h2>
+            </div>
+        </section>
+    </div>
+
+      
+</body>
+</html>
+
+
+
