@@ -18,6 +18,9 @@ Run the following command using pip
 !pip install flask pickle yfinance sklearn numpy keras tensorflow
 ~~~
 
+## Prediction Graph
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd1.png" />
+
 ## Frontend
 
 <img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd1.png" />
