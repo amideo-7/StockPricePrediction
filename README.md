@@ -20,3 +20,6 @@ Run the following command using pip
 
 ## Frontend
 
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd1.png" />
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd2.png" />
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd3.png" />
