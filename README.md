@@ -19,7 +19,7 @@ Run the following command using pip
 ~~~
 
 ## Prediction Graph
-<img src="https://github.com/amideo-7/StockPricePrediction/blob/afdc7fe6a8074c9c994d62f2a451ab2c32926f1c/static/images/FrontEnd1.png" />
+<img src="https://github.com/amideo-7/StockPricePrediction/blob/260137b336aa6eb6d838590d5952e80ee7b27101/static/images/predicitonGraph.png" />
 
 ## Frontend
 
