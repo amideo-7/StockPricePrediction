@@ -3,7 +3,6 @@ import math
 
 import yfinance as yf
 import numpy as np
-import pandas as pd
 import datetime as dt
 
 from sklearn.preprocessing import MinMaxScaler

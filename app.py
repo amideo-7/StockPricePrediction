@@ -5,7 +5,6 @@ import yfinance as yf
 from datetime import datetime, timedelta
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
-import pandas as pd
 
 # Initializing the flask app
 app = Flask(__name__,template_folder='templates')

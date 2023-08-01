@@ -1,50 +1,22 @@
 # Stock Price Prediction
-<div align="center">
+## Predicitng Stock Prices using Artificial Recurrent Neural Networks
 
-<img src="https://github.com/amideo-7/StockPricePrediction/blob/main/Images/stock.png" width="30%" height="30%"/>
+<p>
+Stock price prediction is a critical task in the financial domain, with implications for investors, traders, and businesses. This project aims to leverage the power of artificial neural networks to analyze historical time series data and predict the closing stock prices of a given financial instrument.
+</p>
 
-</div>
+### Long Short-Term Memory (LSTM) Model
+<p>
+The LSTM neural network, a type of recurrent neural network (RNN), will be the core of the stock price prediction model. LSTMs are well-suited for time series data as they can capture long-term dependencies and patterns in sequences, making them effective in forecasting stock prices. It is a variant of the recurrent neural network (RNN) designed to overcome some of the limitations of traditional RNNs, especially when dealing with long-term dependencies in sequences.
+</P>
 
-This project uses machine learning to predict the future price of a stock. The project uses a Long Short-Term Memory (LSTM) neural network to predict the stock price. 
+## Libraries Requiered
 
-The LSTM neural network is a type of recurrent neural network that is well-suited for time series data, such as stock prices. LSTM models were designed to address the vanishing gradient problem. LSTM models have a special structure that allows them to learn long-term dependencies in data.
+Run the following command using pip
 
-LSTM networks are an extension of recurrent neural networks (RNNs) mainly introduced to handle situations where RNNs fail. Talking about RNN, it is a network that works on the present input by taking into consideration the previous output (feedback) and storing in its memory for a short period of time (short-term memory).
+~~~
+!pip install flask pickle yfinance sklearn numpy keras tensorflow
+~~~
 
+## Frontend
 
-The project uses the following steps to predict the stock price:
-
-- Collect historical stock price data.
-- Clean and prepare the data.
-- Split the data into a training set and a test set.
-- Train the LSTM neural network on the training set.
-- Test the LSTM neural network on the test set.
-- Evaluate the performance of the LSTM neural network.
-
-The project uses the following libraries:
-
-- **Pandas**: Used to create dataframes and manipulate data.
-- **NumPy**: Used to create easy to use and flexible array objects.
-- **Datetime**: Used to work with dates and times. It provides a number of classes and functions for creating, manipulating, and formatting dates and times.
-- **Matplotlib**:  Used to create plots and graphs of the data.
-- **sklearn.preprocessing**: This library is used for its MinMaxScaler function in this project, to scale the values to make the calculations easier.
-- **keras.models**: In this project it is used for its sequential model that provides linear stack of layers.
-- **keras.layers**: In this project Dense, and LSTM model are used form this library.
-- **pandas_datareader**: This library is used to read the opening and closing stock price os the given company from the given interval of time.
-- **yfinance**: This libraray can be used as an alternate to read the stock prices from yahoo finance.
-
-## Graph Plots:
-
-***Opening Price Data***
-
-![Opening_data](https://github.com/amideo-7/StockPricePrediction/blob/main/Images/opening_data.png)
-
-***Closing Price Data***
-
-![Closing_data](https://github.com/amideo-7/StockPricePrediction/blob/main/Images/closing_data.png)
-
-***Predictions***
-
-![Predictions](https://github.com/amideo-7/StockPricePrediction/blob/main/Images/predictions.png)
-
-This concludes Stock Price Prediction project
